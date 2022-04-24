@@ -28,4 +28,4 @@ def file_replace_comment(filePath,keywords):
 
 def create_keyword(filePath):
     lines = file_read(filePath)
-    return set(lines)
+    return sorted(set(lines), reverse=True)
