@@ -32,3 +32,16 @@ def file_extname_changed(dir,old,new):
         if(file.endswith(old)):
             os.rename(file, file[:-len(old)] + new)
 
+
+def file_ext_sarch(dir,ext):
+    """
+    指定した拡張子のファイルのみを取得する
+    """
+    result = []
+    files = file_names(dir)
+    for file in files:
+        if(file.endswith(ext)):
+            result.append(file)
+        else:
+            logging.debug("{}は対象外".format(file))
+    return result

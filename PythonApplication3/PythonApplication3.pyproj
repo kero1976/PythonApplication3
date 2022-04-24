@@ -27,6 +27,9 @@
     <Compile Include="DirModule.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FileModule.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonApplication3.py" />
     <Compile Include="test_dirmodule.py">
       <SubType>Code</SubType>
@@ -34,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="テストデータ\" />
+    <Folder Include="テストデータ\テスト3\" />
     <Folder Include="テストデータ\テスト1\" />
     <Folder Include="テストデータ\テスト1\ABC\" />
     <Folder Include="テストデータ\テスト1\DEF\" />
@@ -52,6 +56,8 @@
     <Content Include="テストデータ\テスト2\ABC\TextFile1.csv" />
     <Content Include="テストデータ\テスト2\ABC\TextFile2.txt" />
     <Content Include="テストデータ\テスト2\DEF\XYZ\TextFile3.csv" />
+    <Content Include="テストデータ\テスト3\キーワード.txt" />
+    <Content Include="テストデータ\テスト3\入力ファイル.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
