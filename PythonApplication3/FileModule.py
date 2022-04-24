@@ -25,3 +25,7 @@ def file_replace_comment(filePath,keywords):
 
     with open(filePath, mode='w') as f:
         f.write('\n'.join(result))
+
+def create_keyword(filePath):
+    lines = file_read(filePath)
+    return set(lines)
